@@ -12,4 +12,10 @@ public class GreetingController {
 		Greeting response = new Greeting(name);	
 		return response;
 	}
+	
+	@RequestMapping("/greeting2")
+	public Greeting greeting2(@RequestParam(defaultValue="World") String name) {
+		Greeting response = new Greeting(name);	
+		return response;
+	}
 }
